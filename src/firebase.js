@@ -1,26 +1,29 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth } from 'firebase/auth'
-import { GoogleAuthProvider } from 'firebase/auth'
+import { getAuth } from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { getFirestore } from 'firebase/firestore';
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = initializeApp({
-  apiKey: "AIzaSyD3-eXLsEfSGxtRrOShj0bN3Uz2BeoUHek",
-  authDomain: "airbus-7c626.firebaseapp.com",
-  projectId: "airbus-7c626",
-  storageBucket: "airbus-7c626.appspot.com",
-  messagingSenderId: "213388193245",
-  appId: "1:213388193245:web:90551a5a638c5dd0451a34",
-  measurementId: "G-8EBVJZZTBZ"
-});
+const firebaseConfig = {
+  apiKey: "AIzaSyAQgB6UW_QZ5piry8SnJv8gUXn0s4En_aU",
+  authDomain: "clone-cf89c.firebaseapp.com",
+  projectId: "clone-cf89c",
+  storageBucket: "clone-cf89c.appspot.com",
+  messagingSenderId: "1032132451035",
+  appId: "1:1032132451035:web:75d34be0bcbcc03416cafe",
+  measurementId: "G-W94Y5DCDB9"
+};
 
 // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const provider = new GoogleAuthProvider(app);
-export const db = getFirestore(app);
+const auth = getAuth();
+auth.languageCode = 'it';
+const provider = new GoogleAuthProvider();
+provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+const db = getFirestore(app);
 
+export default  (auth, provider, db);
