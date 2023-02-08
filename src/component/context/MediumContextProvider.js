@@ -11,28 +11,27 @@ const MediumContextProvider = ( props ) => {
   const [ret , setret] = useState('')
 
 
-  const auth = async () => {
+  const handleUserAuth = async () => {
     signInWithPopup(getAuth, GoogleAuthProvider)
       .then(result => {
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
+        // const credential = GoogleAuthProvider.credentialFromResult(result);
+        // const token = credential.accessToken;
         const user = result.user 
 
-        // setUser(user)
+        setUser(user)
       })
       .catch((error )=> {
-        const errorCode = error.code;
-        const errorMessage = error.message;
+        console.error = error.message;
         // The email of the user's account used.
-        const email = error.customData.email;
+        // const email = error.customData.email;
     // The AuthCredential type that was used.
-        const credential = GoogleAuthProvider.credentialFromError(error);
+        // const credential = GoogleAuthProvider.credentialFromError(error);
       })
   }
 
   return (
     <MediumContext.Provider
-      value={{ user ,auth ,st ,des ,setdes ,setst , ret, setret }}>
+      value={{ user ,handleUserAuth ,st ,des ,setdes ,setst , ret, setret }}>
       {props.children}
     </MediumContext.Provider>
   );
