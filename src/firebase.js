@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { getAuth } from 'firebase/auth'
+import { GoogleAuthProvider } from 'firebase/auth'
 import { getFirestore } from 'firebase/firestore';
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -20,10 +20,7 @@ const firebaseConfig = {
 // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
 const app = initializeApp(firebaseConfig);
-const auth = getAuth();
-auth.languageCode = 'it';
-const provider = new GoogleAuthProvider();
-provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
-const db = getFirestore(app);
+export const auth = getAuth(app);
+export const provider = new GoogleAuthProvider(app);
+export const db = getFirestore(app);
 
-export default  (auth, provider, db);
