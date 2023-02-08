@@ -12,7 +12,7 @@ const MediumContextProvider = ( props ) => {
 
 
   const auth = async () => {
-    signInWithPopup(auth, provider)
+    signInWithPopup(getAuth, GoogleAuthProvider)
       .then(result => {
         const credential = GoogleAuthProvider.credentialFromResult(result);
         const token = credential.accessToken;
