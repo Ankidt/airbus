@@ -7,7 +7,8 @@ const Login=()=>{
 	const [email, setEmail] = useState("");
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
-	const [error, setError] = useState("");
+	 // eslint-disable-next-line
+	const [error, setError] = useState(" ");
   
 	const navigate = useNavigate();
 	if(username){
@@ -23,7 +24,7 @@ const Login=()=>{
 		email === localStorage.getItem("email") &&
 		password === localStorage.getItem("password")
 	  ) {
-		navigate("/Flight");
+		navigate("/Home");
 	  } else {
 		alert("Incorrect email or password. Please try again.");
 	  }
@@ -34,14 +35,9 @@ const Login=()=>{
 		<form className='form'>
 		  <h2 className='title'>Log in</h2>
 		  <p className='subtitle'>
-			{signupUser ? 'If you have an account' : "Don't have an account?"} 
-			<a href='#' onClick={() => setSignupUser(!signupUser)}>{signupUser ? 'Log In' : 'sign Up'}</a>
-		  </p>
-  
-		 
-  
-		  <p className='or'>
-			<span>or</span>
+			{signupUser ? 'If you have an account' : "Don't have an account?"
+			// eslint-disable-next-line
+	}<a href='#' onClick={() => setSignupUser(!signupUser)}>{signupUser ? 'Log In' : 'sign Up'}</a>
 		  </p>
   
 		  <div className='email-login'>
@@ -91,6 +87,7 @@ const Login=()=>{
 		  </button>
 		  {
 			!signupUser &&
+			 // eslint-disable-next-line
 		  <a className='forget-pass' href='#'>
 			Forgot password?
 		  </a>

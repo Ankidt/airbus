@@ -6,6 +6,7 @@ import { MediumContext } from './context/MediumContextProvider'
 const Detail = (props) => {
 
   const [data , setdata] = useState([]);
+
   useEffect(() => {
     async function GetData(){
       const Fromtr = props.start.charAt(0).toUpperCase() + props.start.slice(1).toLowerCase()
@@ -17,10 +18,13 @@ const Detail = (props) => {
                      setdata(ele)
                     })
     }
-    GetData() ;
+    GetData();
+     // eslint-disable-next-line
   }, [])
+
+
   const { setst  } = useContext(MediumContext)
-  function handle(){
+  function hundle(){
     setst(data[0])
   }
 
@@ -59,7 +63,7 @@ const Detail = (props) => {
                            </div>
                            <div className='flex flex-col justify-center items-center border-l-1'>
                             <h1 className='text-xl my-2' ><span className='font-xl'>PRICE : </span>{data[0].price}</h1>
-                           <Link to='/checkout' ><button onClick={handle} className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                           <Link to='/checkout' ><button onClick={hundle} className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                               Checkout
                             </button></Link>
                            </div>
