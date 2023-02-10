@@ -17,9 +17,9 @@ const Search = ({start , last , switch1}) => {
 
     return (
         <div className='flex items-center justify-center flex-col' >
-            <div className='flex flex-row1 ' id='card-div'>
+            <div className='flex flex-row1 ' id="block">
                 <h1 className='text-5xl my-3 text-white font-medium place-self-start' id='start' >START JOURNEY</h1>
-                <div className='h-[7rem] rounded-lg bg-white flex items-center justify-center p-5 ' id="block" >
+                <div className='h-[7rem] rounded-lg bg-white flex items-center justify-center p-5 'id='card-div' >
                  
                     <div className='flex flex-col items-center justify-center mx-3 'id='from'>
                         <p className='place-self-start text-slate-400 text-sm ' >From</p>
