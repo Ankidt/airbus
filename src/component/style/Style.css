@@ -104,7 +104,6 @@
 #card-div{
 display: flex;
 flex-direction: row;
-
 padding: 2rem 1rem;
 justify-content: center;
 gap:1rem ;
@@ -150,9 +149,12 @@ gap:1rem ;
      
 
 #book {
-    background-color: #9fc3e2;
+    /* background-color: #bbbdc0; */
   justify-content: center;
   font-weight: 300;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
 
 }
 /* #payment{
@@ -162,9 +164,43 @@ gap:1rem ;
   
 
 } */
+#start{
+    justify-items: center;
+    margin-left: 600px;
 
 
-    
+}
+#ava{
+    margin-left: 200px;
+
+}
+
+.border-between{
+    display :flex;
+border: 1px solid grey;
+margin-top: 20px;
+padding-left:20px;
+margin-left: 100px;
+width:600px;
+justify-content: center;
+}
+.available{
+    padding-left: 300px;
+   
+}
+#navbar-default{
+    display: flex;
+    padding: 5px;
+   margin: 10px;
+   width: 100%;
+    gap: 30px;
+    background-color: rgb(194, 191, 187);
+   
+}
+.whitespace-nowrap{
+    padding: 10px;
+   
+}
    
     
     

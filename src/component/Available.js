@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Flight from './Flight'
 import "./style/Style.css"
+import { Link } from 'react-router-dom';
+import Payment from './Payment';
 
 const Available = () => {
    const [data , setdata] = useState([]);
@@ -16,14 +18,14 @@ const Available = () => {
 
     return (
       
-        <div className='flex items-center justify-center flex-col  w-[50rem] h-[20rem]' >
+        <div className='flex justify-center available ' >
           
           
           
-        <h1 className='text-5xl my-3 text-white font-medium place-self-start' >AVAILABLE FLIGHTS</h1> 
+        <h1 className='text font-medium ' id='ava'>AVAILABLE FLIGHTS</h1> 
         
        
-        <div className='flex flex-col bg-white items-center overflow-y-auto w-full' >
+        <div className='flex overflow-y-auto' >
         
          { data.map((ele , index) => ( 
          
@@ -33,7 +35,10 @@ const Available = () => {
             ))
           }
           <div>
-          
+          {/* <Link>
+            <button onClick={Payment}>Book</button>
+            </Link>
+           */}
           </div>
            
         </div> 

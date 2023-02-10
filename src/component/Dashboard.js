@@ -17,7 +17,7 @@ const Dashboard = () => {
     >
         <div className='flex items-center justify-center  h-screen flex-col justify-evenly' >
         <Search start={setFrom} last={setLast} switch1={() => setOpenModal(true)} />
-        <Available/>
+       {!OpenModal&& <Available/>}
         </div>
         {OpenModal && <Detail start={From} Last={Last} switch={() => setOpenModal(false)} />} 
 

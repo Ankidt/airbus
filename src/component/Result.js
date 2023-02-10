@@ -26,24 +26,30 @@ const Result = () => {
       </div>)
     }
 
-      <div className='flex flex-col justify-center items-center bg-blue-200 p-4 w-2/5' >
-      <h3 className='text-3xl font-xl mt-2' id="add" >ADD CARD TO PAY</h3>
+      <div className='justify-p-w' >
+      <h3 className='text-xl font-xl ' id="add" >ADD CARD TO PAY</h3>
         <form className='bg-white p-4' >
-          <div className="relative z-0 w-full mb-6 group">
-            <input type="text" name="floating_email" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="NAME ON CARD" required />
+          <div  className='relative-name'>
+          <input type="text" name='name' id='#name' className='block name'placeholder="NAME OF PASSANGER" required  >
+
+          </input>
+
           </div>
-          <div className="relative z-0 w-full mb-6 group">
-            <input type="text" name="floating_password" id="floating_password" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="CARD NUMBER" required />
+          <div className="relative-full mb group">
+            <input type="text" name="floating_email" id="floating_email" className="block peer" placeholder="NAME ON CARD" required />
           </div>
-          <div className="grid md:grid-cols-2 md:gap-6">
-            <div className="relative z-0 w-full mb-6 group">
-              <input type="date" name="floating_first_name" id="floating_first_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="expire date" required />
+          <div className="relative z-group">
+            <input type="text" name="floating_password" id="floating_password" className="block none peer" placeholder="CARD NUMBER" required />
+          </div>
+          <div className="grid md:grid">
+            <div className="relative z-w-full ">
+              <input type="date" name="floating_first_name" id="floating_first_name" className=" focus:peer" placeholder="expire date" required />
             </div>
-            <div className="relative z-0 w-full mb-6 group">
-              <input type="number" name="floating_last_name" id="floating_last_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="CVV" required />
+            <div className="relative group">
+              <input type="number" name="floating_last_name" id="floating_last_name" className=" text-gray-peer" placeholder="CVV" required />
             </div>
           </div>
-          <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+          <button type="submit" className="text-focus:ring  dark:hover">Submit</button>
         </form>
 
       </div>
