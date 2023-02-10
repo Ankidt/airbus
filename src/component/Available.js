@@ -35,10 +35,7 @@ const Available = () => {
             ))
           }
           <div>
-          {/* <Link>
-            <button onClick={Payment}>Book</button>
-            </Link>
-           */}
+         
           </div>
            
         </div> 
