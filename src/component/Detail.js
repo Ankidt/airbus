@@ -1,6 +1,7 @@
 import React, { useEffect , useState , useContext} from 'react'
 import { Link } from 'react-router-dom';
 import { MediumContext } from './context/MediumContextProvider'
+import "./style/Style.css";
 
 
 const Detail = (props) => {
@@ -24,7 +25,7 @@ const Detail = (props) => {
 
 
   const { setst  } = useContext(MediumContext)
-  function hundle(){
+  function handle(){
     setst(data[0])
   }
 
@@ -63,8 +64,8 @@ const Detail = (props) => {
                            </div>
                            <div className='flex flex-col justify-center items-center border-l-1'>
                             <h1 className='text-xl my-2' ><span className='font-xl'>PRICE : </span>{data[0].price}</h1>
-                           <Link to='/checkout' ><button onClick={hundle} className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                              Checkout
+                           <Link to='/checkout' ><button onClick={handle} className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                              Book
                             </button></Link>
                            </div>
                         </div>

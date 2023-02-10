@@ -18,8 +18,8 @@ function App() {
       <Router>
       <Navbar/>
         <Routes>
-          <Route exact path='/' element={<Dashboard/>} >
-          </Route>
+          {/* <Route exact path='/' element={<Dashboard/>} >
+          </Route> */}
           <Route exact path='/:id' element={<Dashboard/>} >
           </Route>
          

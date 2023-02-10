@@ -6,7 +6,7 @@ const Payment = ({data}) => {
     const { des , ret  } = useContext(MediumContext)
 
     return (
-        <div className='flex flex-col p-4 bg-blue-400 justify-evenly items-center w-3/5 ' >
+        <div className='flex flex-col p-4 bg-blue-400 justify-evenly items-center w-3/5 '  id='book'>
             <div className='flex flex-col justify-evenly items-center ' >
                 <h1 className='text-7xl font-xl mt-2 mb-4' >Ticket Detail</h1>
                 <div className='flex justify-evenly border-b-4 bg-amber-400 text-white' >

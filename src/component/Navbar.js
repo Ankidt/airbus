@@ -22,9 +22,20 @@ const Navbar = () => {
             >Home</Link>
         </li>
         <li>
+          <Link to="/Dashboard" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+            >Flight</Link>
+        </li>
+        <li>
+          <Link to="/Result" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+            >Result</Link>
+        </li>
+        
+        {/* <li>
           <Link to="/checkout" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
             >Checkout</Link>
-        </li>
+              
+        </li> */}
+      
         
         <li>
          { user ?

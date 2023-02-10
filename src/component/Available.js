@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Flight from './Flight'
+import "./style/Style.css"
 
 const Available = () => {
    const [data , setdata] = useState([]);
@@ -14,14 +15,32 @@ const Available = () => {
       
 
     return (
+      
         <div className='flex items-center justify-center flex-col  w-[50rem] h-[20rem]' >
+          
+          
+          
         <h1 className='text-5xl my-3 text-white font-medium place-self-start' >AVAILABLE FLIGHTS</h1> 
+        
+       
         <div className='flex flex-col bg-white items-center overflow-y-auto w-full' >
-          { data.map((ele , index) => (
+        
+         { data.map((ele , index) => ( 
+         
                 <Flight key={index} plane={ele} />
+              
+                
             ))
           }
+          <div>
+          
+          </div>
+           
         </div> 
+       
+       
+        
+      
         </div>
     )
 }

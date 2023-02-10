@@ -14,7 +14,7 @@ const Result = () => {
     { st ?
       <Payment data={st} />
       :(
-      <div className='flex flex-col p-4 bg-blue-400 justify-center items-center w-3/5' >
+      <div className='flex flex-col p-4 bg-blue-400 justify-center items-center w-3/5' id='payment'>
       <h1 className='text-3xl font-xl mt-2 mb-4' >No ticket in cart</h1>
       <h3 className='text-xl font-xl mt-2 mb-4' >Make a safe journey </h3>
       <img 
@@ -27,7 +27,7 @@ const Result = () => {
     }
 
       <div className='flex flex-col justify-center items-center bg-blue-200 p-4 w-2/5' >
-      <h3 className='text-3xl font-xl mt-2' >ADD CARD TO PAY</h3>
+      <h3 className='text-3xl font-xl mt-2' id="add" >ADD CARD TO PAY</h3>
         <form className='bg-white p-4' >
           <div className="relative z-0 w-full mb-6 group">
             <input type="text" name="floating_email" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="NAME ON CARD" required />

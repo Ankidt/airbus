@@ -1,6 +1,7 @@
 import React from 'react';
 import './style/Style.css';
 
+
 const Flight = ({plane}) => {
     return (
         <div className='flex  border-1 shadow-lg my-1 px-2  justify-between w-full h-[8rem] ' >
@@ -32,6 +33,7 @@ const Flight = ({plane}) => {
                 <p className='place-self-start text-slate-400 text-sm ' >Flight </p>
                 <p className='text-lg ' >{plane.airlineName}</p>
             </div>
+            {/* <button onClick={Payment}>Book</button> */}
         </div>
     )
 }
