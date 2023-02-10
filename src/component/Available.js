@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Flight from './Flight'
 import "./style/Style.css"
-import { Link } from 'react-router-dom';
-import Payment from './Payment';
+
+
 
 const Available = () => {
    const [data , setdata] = useState([]);
