@@ -22,24 +22,12 @@ const Navbar = () => {
           <Link to="/Search" className="block-white" 
             >Home</Link>
         </div>
-        {/* <div>
-          <Link to="/Dashboard" className="block text"
-            >Flight</Link>
-        </div> */}
-        <div>
-          <Link to="/Result" className="block-transparent "
-            >Result</Link>
-        </div>
-        
-        {/* <li>
-          <Link to="/checkout" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-            >Checkout</Link>
-              
-        </li> */}
+      
       
         
         <div>
-         { user ?
+         { 
+         user ?
           <img
             src={user.photoURL}
             alt='logo'

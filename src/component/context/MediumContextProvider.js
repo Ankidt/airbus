@@ -14,18 +14,14 @@ const MediumContextProvider = ( props ) => {
   const handleUserAuth = async () => {
     signInWithPopup(getAuth, GoogleAuthProvider)
       .then(result => {
-        // const credential = GoogleAuthProvider.credentialFromResult(result);
-        // const token = credential.accessToken;
+       
         const user = result.user 
 
         setUser(user)
       })
       .catch((error )=> {
         console.error = error.message;
-        // The email of the user's account used.
-        // const email = error.customData.email;
-    // The AuthCredential type that was used.
-        // const credential = GoogleAuthProvider.credentialFromError(error);
+        
       })
   }
 
