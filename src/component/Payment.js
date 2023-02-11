@@ -50,7 +50,7 @@ const Payment = ({data}) => {
                             </div>
                     </div>
                 </div>
-                <button id='add' onClick={ Add}></button>
+                
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import React ,{useContext} from 'react'
-// import Payment from './Payment'
+import Payment from './Payment'
 import {MediumContext} from './context/MediumContextProvider'
 
 
@@ -11,7 +11,9 @@ const Result = () => {
   return (
     <div className='flex justify-center w-full ' >
 
-  
+{ st ?
+      <Payment data={st} />
+      :(
       
       <div className='bg-blue-w' id='payment'>
       <h1 className='text-3xl font-xl mt mb-4' >No ticket in cart</h1>
@@ -22,7 +24,8 @@ const Result = () => {
           width={200}
           height={150} 
         />
-      </div>
+      </div>)
+}
     
 
       <div className='justify-p-w' id='payment'>
