@@ -1,5 +1,6 @@
-import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+// import backg from '../component/5858.jpg';
 import {MediumContext} from './context/MediumContextProvider';
 import "./style/Style.css";
 
@@ -10,16 +11,18 @@ const Navbar = () => {
 
   return (
     
-<nav className="bg border-gra"id="navbar-default">
+<nav className="bg border-gra"id="navbar-default"
+    // style={{backgroundImage: `url(${backg})`}}
+    >
   <div className="container  mx-auto">
     <a href="/" className="flex items-center">
 
-        <span className="whitespace-nowrap">Airbus</span>
+        <span className="whitespace-nowrap" id='airbus'>Airbus</span>
     </a>
     <div className="hidden w-auto" >
       <div className="navbar"id="navbar-default">
         <div>
-          <Link to="/Search" className="block-white" 
+          <Link to="/Search" className="block-white" id='home'
             >Home</Link>
         </div>
       
@@ -36,7 +39,7 @@ const Navbar = () => {
             className='rounded'
           /> 
           :
-          <Link to="/Login" onClick={handleUserAuth} className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+          <Link to="/Login" onClick={handleUserAuth} className="block rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-bg-transparent">
           Login</Link>
          }
         </div>

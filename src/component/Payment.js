@@ -8,7 +8,7 @@ const Payment = ({data}) => {
 
     return (
         <div className='flex-col justify-evenly '  id='book'>
-            <div className='flex flex-col evenly' >
+            <div className='flex flex-col evenly' id='place-self-data'>
                 <h1 className='text font-xl' >Ticket Detail</h1>
                 <div className='flex justify-evenly text-white' >
                     <div className='text self-center' >{data.from}</div>
@@ -50,6 +50,7 @@ const Payment = ({data}) => {
                             </div>
                     </div>
                 </div>
+                <button id='add' onClick={ Add}></button>
             </div>
         </div>
     )

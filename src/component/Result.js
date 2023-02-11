@@ -1,5 +1,5 @@
 import React ,{useContext} from 'react'
-import Payment from './Payment'
+// import Payment from './Payment'
 import {MediumContext} from './context/MediumContextProvider'
 
 
@@ -11,11 +11,10 @@ const Result = () => {
   return (
     <div className='flex justify-center w-full ' >
 
-    { st ?
-      <Payment data={st} />
-      :(
-      <div className='flex flex-col p-4 bg-blue-400 justify-center items-center w-3/5' id='payment'>
-      <h1 className='text-3xl font-xl mt-2 mb-4' >No ticket in cart</h1>
+  
+      
+      <div className='bg-blue-w' id='payment'>
+      <h1 className='text-3xl font-xl mt mb-4' >No ticket in cart</h1>
       <h3 className='text-xl font-xl mt-2 mb-4' >Make a safe journey </h3>
       <img 
           src="https://media2.giphy.com/media/iCEPetKVHKDOVOzMSi/giphy.gif?cid=ecf05e476g9lt4kweigpdc7b50oj7s4heyqcb0cxpnlquu7a&rid=giphy.gif" 
@@ -23,10 +22,10 @@ const Result = () => {
           width={200}
           height={150} 
         />
-      </div>)
-    }
+      </div>
+    
 
-      <div className='justify-p-w' >
+      <div className='justify-p-w' id='payment'>
       <h3 className='text-xl font-xl ' id="add" >ADD CARD TO PAY</h3>
         <form className='bg-white p-4' >
           <div  className='relative-name'>

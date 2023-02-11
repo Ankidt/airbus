@@ -1,12 +1,14 @@
 import React from 'react';
 import './style/Style.css';
+import backg from '../component/5858.jpg';
+
 
 
 
 
 const Flight = ({plane}) => {
     return (
-        <div className='flex  border-between ' >
+        <div className='flex  border-between ' id="flight" style={{backgroundImage: `url(${backg})`}}>
             <div className='flex justify-center'>
                 <p className='place-text' >Airlinename</p>
                 <p className='text-lg ' >{plane.airlineName}</p>
@@ -30,10 +32,12 @@ const Flight = ({plane}) => {
                 <p className='text-lg ' >{plane.to}</p>
             </div>
             
+            
             <div className='justify-center mx-3 '>
                 <p className='place-self-sm ' >Depart</p>
                 <p className='text-lg ' >{plane.departure.departureDate}</p>
             </div>
+            
             
             <div className='items-center-center '>
                 <p className='place-sm ' >Flight </p>

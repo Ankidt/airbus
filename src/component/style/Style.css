@@ -60,7 +60,7 @@
 .loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
 
 .loader-line-wrap:nth-child(1) .loader-line {
-    border-color: hsl(0, 80%, 60%);
+    border-color: hsl(0, 1%, 18%);
     height: 90px;
     width: 90px;
     top: 7px;
@@ -118,6 +118,7 @@ gap:1rem ;
     text-align: center;
     align-content: center;
     margin-top: 50px;
+    
  
    
     
@@ -151,10 +152,11 @@ gap:1rem ;
 #book {
     /* background-color: #bbbdc0; */
   justify-content: center;
-  font-weight: 300;
+  font-weight: 50;
   display: flex;
   justify-content: center;
   margin-left: 50px;
+  border-radius: 50px;
 
 }
 /* #payment{
@@ -177,7 +179,7 @@ gap:1rem ;
 
 .border-between{
     display :flex;
-border: 1px solid grey;
+border: 1px solid rgb(201, 202, 195);
 margin-top: 20px;
 padding-left:20px;
 margin-left: 100px;
@@ -190,19 +192,58 @@ justify-content: center;
 }
 #navbar-default{
     display: flex;
-    padding: 5px;
-   margin: 10px;
+    padding: 10px;
+    border: #8f8b8b;
+
    width: 100%;
-    gap: 30px;
-    background-color: rgb(194, 191, 187);
+    gap: 90px;
+    background-color: white;
    
 }
 .whitespace-nowrap{
     padding: 10px;
    
 }
+/* #flight{
+    padding-left: 200px;
+    margin: 10px;
+
+
+} */
+#book-large{
+    font-size: 15px;
+    justify-content: centre;
+    gap: 10px;
+
+}
+#mt-hover{
+    font-size: 15px;
+
+}
+#aria-centre{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
    
-    
-    
 
+}
+#place-self-data{
+   background-color: #eaeef1;
+   font-size: 15px;
 
+}
+#add{
+    font-size: 25px;
+
+}
+    
+#airbus{
+    font-size: 20px;
+    padding-left: 50px;
+    justify-items: center;
+    padding-top: 100px;
+}
+#home{
+    padding-left: 200px;
+    
+}

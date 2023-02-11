@@ -1,6 +1,7 @@
 import './App.css';
 import Dashboard from './component/Dashboard';
 import Navbar from './component/Navbar';
+import backg from './component/5858.jpg'
 import {
   BrowserRouter as Router,
   Route,
@@ -13,8 +14,9 @@ import MediumContextProvider from './component/context/MediumContextProvider';
 
 function App() {
   return (
-      <div>
-      <MediumContextProvider>
+      <div 
+       style={{backgroundImage: `url(${backg})`}}>
+       <MediumContextProvider>
       <Router>
       <Navbar/>
         <Routes>
