@@ -10,12 +10,13 @@ const Result = () => {
 
   return (
     <div className='flex justify-center w-full ' >
+      <div className='make justify' id='make-safe'>
 
 { st ?
       <Payment data={st} />
       :(
       
-      <div className='bg-blue-w' id='payment'>
+      <div className='bg-blue-w' >
       <h1 className='text-3xl font-xl mt mb-4' >No ticket in cart</h1>
       <h3 className='text-xl font-xl mt-2 mb-4' >Make a safe journey </h3>
       <img 
@@ -26,7 +27,6 @@ const Result = () => {
         />
       </div>)
 }
-    
 
       <div className='justify-p-w' id='payment'>
       <h3 className='text-xl font-xl ' id="add" >ADD CARD TO PAY</h3>
@@ -55,6 +55,7 @@ const Result = () => {
         </form>
 
       </div>
+    </div>
     </div>
   )
 }

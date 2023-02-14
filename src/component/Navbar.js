@@ -39,7 +39,7 @@ const Navbar = () => {
             className='rounded'
           /> 
           :
-          <Link to="/Login" onClick={handleUserAuth} className="block rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-bg-transparent">
+          <Link to="/Login" onClick={handleUserAuth} className="block-hover:bg-transparent" id="login">
           Login</Link>
          }
         </div>

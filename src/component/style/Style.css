@@ -4,7 +4,7 @@
     font-weight: 600;
 }
 
-.loader {
+/* .loader {
     
     background: #000;
     background: radial-gradient(#222, #000);
@@ -99,7 +99,7 @@
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 #card-div{
 display: flex;
@@ -123,10 +123,10 @@ gap:1rem ;
    
     
 }
- #available{
+ /* #available{
     width: 90%;
     display: grid;
-    padding-left: 50px;
+    padding-left: 100px;
     grid-template-columns: auto auto auto auto ;
     background-color: #333f48;
 
@@ -136,114 +136,163 @@ gap:1rem ;
    
     
     text-align: center; 
- }
-   
- /* #available{
-    display: flex;
-flex-direction: row;
-
-padding: 2rem 1rem;
-justify-content: center;
-gap:1rem ;
-
  } */
-     
+#block{
+    background-color: #ded8d8;
+    margin: 100px;
+    border-radius: 50px;
+    width: 90%;
+   padding-left: 0.5px;
+    display: flex;
+    justify-content: center;
+    min-width: fit-content;
+
+ }  
 
 #book {
     /* background-color: #bbbdc0; */
-  justify-content: center;
-  font-weight: 50;
-  display: flex;
-  justify-content: center;
-  margin-left: 50px;
+  
+  font-weight: 200;
+  font-size: 50px;
+ padding-left: 100px;
+  margin-left: 40px;
+  padding-top: 10px;
+  
   border-radius: 50px;
 
 }
-/* #payment{
-    background-color: #9fc3e2;
+#payment{
+   
+    display: flex;
     justify-content: center;
-    font-weight: 300;
-  
-
-} */
-#start{
-    justify-items: center;
-    margin-left: 600px;
-
+    padding-bottom:100px;
+    font-weight: 600;
+    padding-left: 900px;
+    padding-right: 800px;
+    /* padding-top: 100px; */
+    /* width: 40%; */
+}
+#make-safe{
+    padding-left: 200px;
+    
+    }
+#add{
+    font-size: 25px;
+  padding-bottom: 500px;
+    /* display: flex;
+    justify-content: space-evenly; */
 
 }
+ 
+
 #ava{
     margin-left: 200px;
-
+    padding-left: 300px;
+    
 }
 
 .border-between{
     display :flex;
 border: 1px solid rgb(201, 202, 195);
-margin-top: 20px;
+margin-top: 30px;
 padding-left:20px;
-margin-left: 100px;
-width:600px;
+margin-left: 200px;
+width:80%;
+display: flex;
 justify-content: center;
 }
-.available{
-    padding-left: 300px;
-   
-}
+
 #navbar-default{
     display: flex;
     padding: 10px;
-    border: #8f8b8b;
+    border: #746c6c;
 
    width: 100%;
     gap: 90px;
-    background-color: white;
+    background-color: rgb(128, 133, 117);
    
 }
 .whitespace-nowrap{
     padding: 10px;
    
 }
-/* #flight{
-    padding-left: 200px;
-    margin: 10px;
 
-
-} */
 #book-large{
     font-size: 15px;
     justify-content: centre;
     gap: 10px;
-
+    background-color: #746c6c;
+  
+    
 }
 #mt-hover{
     font-size: 15px;
+    background-color: #746c6c;
 
 }
 #aria-centre{
     display: flex;
     justify-content: center;
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 400;
+   padding-bottom: 400px;
+    border-radius: 50px;
+    border: 20px;
    
 
 }
 #place-self-data{
-   background-color: #eaeef1;
+   
    font-size: 15px;
+   font-weight: 800;
+   padding-right: 500px;
 
 }
-#add{
-    font-size: 25px;
-
-}
-    
+   
 #airbus{
     font-size: 20px;
-    padding-left: 50px;
-    justify-items: center;
-    padding-top: 100px;
+    padding-left: 60px;
+    
+    justify-content: center;
+    /* padding-top: 200px; */
+    color: black;
 }
 #home{
     padding-left: 200px;
+    color: black;
     
+}
+#login{
+    padding-left: 600px;
+    color: black;
+
+}
+/* #flightbook{
+    justify-content: center;
+
+    font-weight: 500;
+    width: 70px;
+    height: 40px;
+  padding: 10px 20px;
+   background-color: #73a2f2;  
+} */
+#airline{
+padding-right: 10px;
+  
+}
+#desti{
+    padding-right: 35px;
+}
+#loc{
+    padding-right: 45px;
+    
+}
+#dep{
+    padding-right: 15px;
+}
+#arr{
+    padding-left: 25px;
+}
+.flex-col-justify{
+    padding-right: 45px;
 }

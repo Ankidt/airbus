@@ -25,7 +25,7 @@ const Available = () => {
         <h1 className='text font-medium ' id='ava'>AVAILABLE FLIGHTS</h1> 
         
        
-        <div className='flex overflow-y-auto' >
+        <div className='flex overflow-y-auto' id='datflight'>
         
          { data.map((ele , index) => ( 
          
@@ -34,9 +34,7 @@ const Available = () => {
                 
             ))
           }
-          <div>
-         
-          </div>
+          
            
         </div> 
        

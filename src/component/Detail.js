@@ -54,7 +54,7 @@ const Detail = (props) => {
                                 height={50}
                                />
                            </div> 
-                           <div className='text-3xl font-medium place-self-center' >{data[0].to}</div>
+                           <div className='text-3xl place-self-center' >{data[0].to}</div>
                         </div>
                         <div className='flex justify-around items-center py-2'>
                            <div className='flex-col-border-r ' >
