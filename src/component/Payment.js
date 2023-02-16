@@ -23,18 +23,18 @@ const Payment = ({data}) => {
                     <div className='font-medium place-self' >{data.to}</div>
                 </div>
                 <div className='flex flex border-b' >
-                            <h1 className='text-xl my-1' ><span className='text-xl'>Duration: </span> {data.duration} </h1>
-                            <h1 className='text-xl my-1' ><span className='text-xl'>Airplane Name: </span>{data.airlineName}</h1>
+                            <h3 className='text-xl my-1' ><span className='text-xl'>Duration: </span> {data.duration} </h3>
+                            <h3 className='text-xl my-1' ><span className='text-xl'>Airplane Name: </span>{data.airlineName}</h3>
                 </div>
                 <div className='center p mt' >
                     <div className='mr items-center' >
                         <div className='flex colll'>
-                            <h1 className='text-3xl  font-lg' >Departure</h1>
+                            <h2 className='text-3xl  font-lg' >Departure</h2>
                             <p className='text-xl' ><span>Date: </span>{des}</p>
                             <p className='text-xl' ><span>Time: </span>{data.departure.departureTime}</p>
                         </div>
                         <div className='flex evenly items-center'>
-                            <h1 className='text-3xl font-lg' >Return</h1>
+                            <h2 className='text-3xl font-lg' >Return</h2>
                             <p className='text-xl' ><span>Date: </span> {ret}</p>
                             <p className='text-xl' ><span>Time: </span> {data.return.returnTime}</p>
                         </div>
@@ -43,15 +43,16 @@ const Payment = ({data}) => {
                             <div className=' bg-blue items' >
                                 <h1 className='text-5xl mb-3 ' >Fare Summary</h1>
                                 <div className='border-b-1 mb-3' >
-                                    <h1 className='text-xl' ><span className='text-2xl'>Flight Price: </span>Rs. {data.price}</h1>
-                                    <h1 className='text-xl' ><span className='text-2xl'>Extra Charge: </span>Rs. 500</h1>
+                                    <h2 className='text-xl' ><span className='text-2xl'>Flight Price: </span>Rs. {data.price}</h2>
+                                    <h2 className='text-xl' ><span className='text-2xl'>Extra Charge: </span>Rs. 500</h2>
                                 </div>
-                                <h1 className='text-xl border-b-2 border-t-2 ' ><span className='text-2xl'>Total </span>Rs. {parseInt(data.price) + 500}</h1>
+                                <h2 className='text-xl border-b-2 border-t-2 ' ><span className='text-2xl'>Total </span>Rs. {parseInt(data.price) + 500}</h2>
                             </div>
                     </div>
                 </div>
                 
             </div>
+           
         </div>
     )
 }

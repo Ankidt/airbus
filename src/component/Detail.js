@@ -42,7 +42,7 @@ const Detail = (props) => {
             {
                 data.length > 0 
                  ?(
-                    <div className='flex flex-col justify-center p-2'>
+                    <div className='flex flex-col justify-center p-2' id='justify-p'>
                         <div className='flex justify-white' >
                            <div className='text-center' >{data[0].from}</div>
                            <div className='flex flex-col' >
@@ -63,7 +63,7 @@ const Detail = (props) => {
                               <h2 className='border-my '><span className='font-lg' >Airplane Name : </span>{data[0].airlineName}</h2>
                            </div>
                            <div className='items-center border-l'>
-                            <h1 className='text-xl my-2' ><span className='font-xl'>PRICE : </span>{data[0].price}</h1>
+                            <h2 className='text-xl my-2' ><span className='font-xl'>PRICE : </span>{data[0].price}</h2>
                            <Link to='/checkout' ><button onClick={handle} className="bg-hover:bg" id="book-large">
                               Book
                             </button></Link>

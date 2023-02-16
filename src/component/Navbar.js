@@ -16,8 +16,11 @@ const Navbar = () => {
     >
   <div className="container  mx-auto">
     <a href="/" className="flex items-center">
-
-        <span className="whitespace-nowrap" id='airbus'>Airbus</span>
+  
+        <span className="whitespace-nowrap" id='airbus'>
+          <i className="fa-solid fa-plane-departure"></i>
+          Airbus
+        </span>
     </a>
     <div className="hidden w-auto" >
       <div className="navbar"id="navbar-default">

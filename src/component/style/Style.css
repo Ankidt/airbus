@@ -4,113 +4,16 @@
     font-weight: 600;
 }
 
-/* .loader {
-    
-    background: #000;
-    background: radial-gradient(#222, #000);
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 99999;
-}
-
-.loader-inner {
-    bottom: 0;
-    height: 60px;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100px;
-}
-
-.loader-line-wrap {
-    animation: 
-    spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
-  ;
-    box-sizing: border-box;
-    height: 50px;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    transform-origin: 50% 100%;
-    width: 100px;
-}
-.loader-line {
-    border: 4px solid transparent;
-    border-radius: 100%;
-    box-sizing: border-box;
-    height: 100px;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100px;
-}
-.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
-.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
-.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
-.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
-.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
-
-.loader-line-wrap:nth-child(1) .loader-line {
-    border-color: hsl(0, 1%, 18%);
-    height: 90px;
-    width: 90px;
-    top: 7px;
-}
-.loader-line-wrap:nth-child(2) .loader-line {
-    border-color: hsl(60, 80%, 60%);
-    height: 76px;
-    width: 76px;
-    top: 14px;
-}
-.loader-line-wrap:nth-child(3) .loader-line {
-    border-color: hsl(120, 80%, 60%);
-    height: 62px;
-    width: 62px;
-    top: 21px;
-}
-.loader-line-wrap:nth-child(4) .loader-line {
-    border-color: hsl(180, 80%, 60%);
-    height: 48px;
-    width: 48px;
-    top: 28px;
-}
-.loader-line-wrap:nth-child(5) .loader-line {
-    border-color: hsl(240, 80%, 60%);
-    height: 34px;
-    width: 34px;
-    top: 35px;
-    display: flex;
-    margin: auto;
-}
-
-@keyframes spin {
-    0%, 15% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} */
 
 #card-div{
 display: flex;
 flex-direction: row;
 padding: 2rem 1rem;
 justify-content: center;
-gap:1rem ;
+gap:2rem ;
 
 }
 
-/* background-color: rgb(225, 229, 239); */
 
 
 #search{
@@ -123,20 +26,7 @@ gap:1rem ;
    
     
 }
- /* #available{
-    width: 90%;
-    display: grid;
-    padding-left: 100px;
-    grid-template-columns: auto auto auto auto ;
-    background-color: #333f48;
 
-    border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-   
-    
-    text-align: center; 
- } */
 #block{
     background-color: #ded8d8;
     margin: 100px;
@@ -152,21 +42,22 @@ gap:1rem ;
 #book {
     /* background-color: #bbbdc0; */
   
-  font-weight: 200;
-  font-size: 50px;
- padding-left: 100px;
-  margin-left: 40px;
+  font-weight: 600;
+  font-size: 40px;
+ 
+  margin-left: 5px;
   padding-top: 10px;
   
-  border-radius: 50px;
+ 
 
 }
 #payment{
     justify-content: center;
-    padding-bottom:1000px;
+    
+    padding-bottom:30000px;
     font-weight: 600;
-    padding-left: 700px;
-    padding-right: 800px;
+    padding-left: 600px;
+    padding-right: 700px;
     font-size: 25px;  
   
 }
@@ -185,6 +76,9 @@ gap:1rem ;
     margin-left: 200px;
     padding-left: 300px;
     
+}
+#datflight{
+   padding-right: 100px;
 }
 
 .border-between{
@@ -205,13 +99,13 @@ justify-content: center;
 
    width: 100%;
     gap: 90px;
-    background-color: rgb(128, 133, 117);
+    background-color: rgb(98, 102, 91);
    
 }
-.whitespace-nowrap{
+/* .whitespace-nowrap{
     padding: 10px;
    
-}
+} */
 
 #book-large{
     font-size: 15px;
@@ -242,25 +136,32 @@ justify-content: center;
    font-size: 15px;
    font-weight: 800;
    padding-right: 500px;
+   color: #746c6c;
 
 }
    
 #airbus{
     font-size: 20px;
-    padding-left: 60px;
-    
-    justify-content: center;
-    /* padding-top: 200px; */
+    padding-left: 80px;
+    font-weight: 600;
     color: black;
+    padding-bottom: 100px;
+    position: relative;
+    top: 25px;
+
+   
+
 }
 #home{
-    padding-left: 200px;
+    padding-left: 300px;
     color: black;
-    
+    bottom: 15px;
+   
 }
 #login{
-    padding-left: 600px;
+    padding-left: 500px;
     color: black;
+    
 
 }
 /* #flightbook{
@@ -296,4 +197,9 @@ padding-right: 10px;
     font-size: 30px;
    
 
+}
+#justify-p{
+    padding-top: 120px;
+    color: #d1bbbb;
+    font-size: 15px;
 }
