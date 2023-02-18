@@ -52,7 +52,7 @@ gap:2rem ;
 }
  #payment{
     
-    padding-bottom: 900px;
+    bottom: 1000px;
     font-weight: 600;
     padding-left: 600px;
     padding-right: 700px;
@@ -66,19 +66,14 @@ gap:2rem ;
     padding-left: 100px;
     column-count: 1;
     column-gap: 100px;
-    } */
-    /* #pay-safe{
+    } 
+    #pay-safe{
         float: left;
         width: 50%;
         padding: 10px;
-        height: 300px; /* Should be removed. Only for demonstration */
+        height: 300px; 
+    }
       
-#make-safe{
-    float: left;
-  width: 50%;
-  padding: 10px;
-  height: 25px;
-}
 
 
   
