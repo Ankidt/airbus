@@ -28,7 +28,7 @@ gap:2rem ;
 }
 
 #block{
-    background-color: #ded8d8;
+    background-color: #808279;
     margin: 100px;
     border-radius: 50px;
     width: 90%;
@@ -40,31 +40,48 @@ gap:2rem ;
  }  
 
 #book {
-    /* background-color: #bbbdc0; */
+    background-color: #c2c5c8;
   
-  font-weight: 600;
-  font-size: 40px;
+  font-weight: 200;
+  font-size: 30px;
+  padding-left: 100px;
  
   margin-left: 5px;
   padding-top: 10px;
-  
- 
 
 }
-#payment{
-    justify-content: center;
+ #payment{
     
-    padding-bottom:30000px;
+    padding-bottom: 900px;
     font-weight: 600;
     padding-left: 600px;
     padding-right: 700px;
-    font-size: 25px;  
-  
-}
+     font-size: 25px; 
+     
+     
+} 
 #make-safe{
-    padding-left: 200px;
-    
-    }
+    display: inline-block;
+    columns: 2;
+    padding-left: 100px;
+    column-count: 1;
+    column-gap: 100px;
+    } */
+    /* #pay-safe{
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      
+#make-safe{
+    float: left;
+  width: 50%;
+  padding: 10px;
+  height: 25px;
+}
+
+
+  
 #add{
     font-size: 25px;
     display: block; 
@@ -102,22 +119,31 @@ justify-content: center;
     background-color: rgb(98, 102, 91);
    
 }
-/* .whitespace-nowrap{
-    padding: 10px;
-   
-} */
 
-#book-large{
+
+#book-large {
     font-size: 15px;
     justify-content: centre;
     gap: 10px;
-    background-color: #746c6c;
-  
-    
+    background-color: #908585;
+    display: flex;
+   
 }
-#mt-hover{
+.bg-gray-px{
+    display: flex;
+    padding-bottom: 20px;}
+ #mt-hover{
+   
+    
     font-size: 15px;
-    background-color: #746c6c;
+    background-color: #c1b4b4;
+  
+   
+} 
+#mt-cancel{
+   
+    padding-left: 200px;
+   
 
 }
 #aria-centre{
@@ -125,9 +151,10 @@ justify-content: center;
     justify-content: center;
     font-size: 15px;
     font-weight: 400;
-   padding-bottom: 400px;
-    border-radius: 50px;
+   padding-bottom: 200px;
+    border-radius: 20px;
     border: 20px;
+    color: rgb(120, 110, 110);
    
 
 }
@@ -135,8 +162,8 @@ justify-content: center;
    
    font-size: 15px;
    font-weight: 800;
-   padding-right: 500px;
-   color: #746c6c;
+   padding-right: 400px;
+   color: #121111;
 
 }
    
@@ -147,7 +174,7 @@ justify-content: center;
     color: black;
     padding-bottom: 100px;
     position: relative;
-    top: 25px;
+    top: 15px;
 
    
 
@@ -164,15 +191,7 @@ justify-content: center;
     
 
 }
-/* #flightbook{
-    justify-content: center;
 
-    font-weight: 500;
-    width: 70px;
-    height: 40px;
-  padding: 10px 20px;
-   background-color: #73a2f2;  
-} */
 #airline{
 padding-right: 10px;
   
@@ -199,7 +218,9 @@ padding-right: 10px;
 
 }
 #justify-p{
-    padding-top: 120px;
-    color: #d1bbbb;
+    padding-top: 12px;
+    color: #554848;
     font-size: 15px;
+    
+   
 }

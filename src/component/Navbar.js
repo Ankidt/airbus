@@ -28,9 +28,6 @@ const Navbar = () => {
           <Link to="/Search" className="block-white" id='home'
             >Home</Link>
         </div>
-      
-      
-        
         <div>
          { 
          user ?

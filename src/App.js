@@ -10,7 +10,7 @@ import {
 import Result from './component/Result';
 import Login from './component/Login/Login';
 import MediumContextProvider from './component/context/MediumContextProvider';
-
+ 
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
           </Route>
           <Route exact path='/checkout' element={<Result/>} >
           </Route>
+         
         </Routes>
       </Router>
       </MediumContextProvider>

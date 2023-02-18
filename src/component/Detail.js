@@ -30,12 +30,12 @@ const Detail = (props) => {
   }
 
   return (
-    <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true" id='aria-centre'>
+    <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true" >
 
       <div className="fixed inset-opacity"></div>
 
       <div className="fixed inset overflow-y-auto">
-        <div className="min-h-full items-end">
+        <div className="min-h-full items-end"id='aria-centre'>
 
           <div className="relative transform w-lg">
 
@@ -75,7 +75,7 @@ const Detail = (props) => {
                  <div className='text-mt-3' >No Flight For Given Filter</div>
             }
 
-            <div className="bg-gray-px">
+            <div className="bg-gray-px" id='mt-cancel'>
               <button type="button"
                 className="mt-hover:bgfocus:ringsm"
                 onClick={props.switch} id="mt-hover"

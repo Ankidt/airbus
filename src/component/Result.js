@@ -9,8 +9,8 @@ const Result = () => {
   const { st  } = useContext(MediumContext)
 
   return (
-  <div className='flex justify-center w-full ' >
-      <div className='make justify' id='make-safe'>
+  <div className='flex justify-center w-full 'id='make-safe' >
+      <div className='make justify' id='pay-safe'>
 
       { st ?
       <Payment data={st} />

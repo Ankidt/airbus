@@ -1,10 +1,10 @@
 import {  useState, createContext } from 'react';
-import { signInWithPopup } from "firebase/auth";
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { getAuth } from 'firebase/auth';
 
 export const MediumContext = createContext();
 
-const MediumContextProvider = ( props ) => {
+const MediumContextProvider = ( {children} ) => {
   const [user, setUser] = useState(null)
   const [st , setst] = useState(null)
   const [des , setdes] = useState('')
@@ -12,7 +12,8 @@ const MediumContextProvider = ( props ) => {
 
 
   const handleUserAuth = async () => {
-    signInWithPopup(getAuth, GoogleAuthProvider)
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(getAuth, provider)
       .then(result => {
        
         const user = result.user 
@@ -28,8 +29,8 @@ const MediumContextProvider = ( props ) => {
   return (
     <MediumContext.Provider
       value={{ user ,handleUserAuth ,st ,des ,setdes ,setst , ret, setret }}>
-      {props.children}
+      {children}
     </MediumContext.Provider>
-  );
+  )
 }
 export default MediumContextProvider;
